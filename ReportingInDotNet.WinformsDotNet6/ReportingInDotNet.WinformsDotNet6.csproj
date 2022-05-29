@@ -8,4 +8,16 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="ReportDefinitions\HelloWorldReport.rdlc" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="ReportDefinitions\HelloWorldReport.rdlc" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ReportViewerCore.WinForms" Version="15.1.16" />
+  </ItemGroup>
+
 </Project>

@@ -6,5 +6,11 @@ namespace ReportingInDotNet.WinformsDotNet6
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            reportViewer1.LocalReport.ReportEmbeddedResource = "ReportingInDotNet.WinformsDotNet6.ReportDefinitions.HelloWorldReport.rdlc";
+            reportViewer1.RefreshReport();
+        }
     }
 }
