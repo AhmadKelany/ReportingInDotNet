@@ -10,7 +10,7 @@ public class Item
     public Category Category { get; set; }
     public override string ToString()
     {
-        return $"{ItemNameEnglish}-Price:{Price:N2}, Qty:{Quantity}, Last Sold:{LastSold:yyyy-MM-dd}";
+        return $"{ItemNameEnglish}-{ItemNameArabic}-Price:{Price:N2}, Qty:{Quantity}, Last Sold:{LastSold:yyyy-MM-dd}";
     }
 
 }

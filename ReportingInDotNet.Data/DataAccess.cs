@@ -13,7 +13,7 @@ public static class DataAccess
     {
         Faker<Item> itemFaker = new Faker<Item>().
             RuleFor(i=> i.ItemNameEnglish , f => f.Lorem.Sentence(7)).
-            RuleFor(i => i.ItemNameArabic , f => f.Random.String2(7,"ابتثجحخدذرزسشصضطظعغفقكلمنهوي")).
+            RuleFor(i => i.ItemNameArabic , f => f.Random.String2(50,"ابتثجحخدذرزسشصضطظعغفقكلمنهوي ")).
             RuleFor(i=>i.Quantity,f=>f.Random.Int(5,9999)).
             RuleFor(i => i.Price , f=> f.Random.Decimal(5.75m,999m)).
             RuleFor(i => i.LastSold , f => f.Date.Past(2)).
