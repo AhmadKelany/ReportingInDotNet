@@ -20,7 +20,7 @@ public static class DataAccess
             RuleFor(i=>i.Category , f => f.Random.Enum<Category>());
 
 
-        List<Item> items = await Task.Run(() => itemFaker.GenerateBetween(count,count));
+        List<Item> items = await Task.Run(() => itemFaker.Generate(count));
        
         return items;
     }
