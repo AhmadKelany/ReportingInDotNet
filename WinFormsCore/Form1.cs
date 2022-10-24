@@ -11,7 +11,9 @@ namespace WinFormsCore
 
         private async void Form1_Load(object sender, EventArgs e)
         {
-            var items = await DataAccess.GetItemsAsync(200);
+            //var items = await DataAccess.GetItemsAsync(200);
+            reportViewer1.LocalReport.ReportEmbeddedResource = "WinFormsCore.ReportDefinitions.TestReport.rdlc";
+            reportViewer1.RefreshReport();
         }
     }
 }
