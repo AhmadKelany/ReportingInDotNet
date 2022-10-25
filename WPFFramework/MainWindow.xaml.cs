@@ -24,5 +24,11 @@ namespace WPFFramework
         {
             InitializeComponent();
         }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            reportviewer.LocalReport.ReportEmbeddedResource = "WPFFramework.ReportDefinitions.TestReport.rdlc";
+            reportviewer.RefreshReport();
+        }
     }
 }
