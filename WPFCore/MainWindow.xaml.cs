@@ -24,5 +24,11 @@ namespace WPFCore
         {
             InitializeComponent();
         }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            reportviewer.LocalReport.ReportEmbeddedResource = "WPFCore.ReportDefinitions.TestReport.rdlc";
+            reportviewer.RefreshReport();
+        }
     }
 }
