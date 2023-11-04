@@ -1,8 +1,24 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+<?xml version="1.0"?>
+<Report xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition">
+  <AutoRefresh>0</AutoRefresh>
   <Body>
+    <Style />
     <ReportItems>
       <Textbox Name="Textbox1">
+        <Left>1.61078cm</Left>
+        <Top>1.63724cm</Top>
+        <Height>2.37271cm</Height>
+        <Width>13.77125cm</Width>
+        <Style>
+          <BackgroundColor>MidnightBlue</BackgroundColor>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+          <Border>
+            <Style>None</Style>
+          </Border>
+        </Style>
         <CanGrow>true</CanGrow>
         <KeepTogether>true</KeepTogether>
         <Paragraphs>
@@ -21,25 +37,9 @@
             </Style>
           </Paragraph>
         </Paragraphs>
-        <rd:DefaultName>Textbox1</rd:DefaultName>
-        <Top>1.63724cm</Top>
-        <Left>1.61078cm</Left>
-        <Height>2.37271cm</Height>
-        <Width>13.77125cm</Width>
-        <Style>
-          <Border>
-            <Style>None</Style>
-          </Border>
-          <BackgroundColor>MidnightBlue</BackgroundColor>
-          <PaddingLeft>2pt</PaddingLeft>
-          <PaddingRight>2pt</PaddingRight>
-          <PaddingTop>2pt</PaddingTop>
-          <PaddingBottom>2pt</PaddingBottom>
-        </Style>
       </Textbox>
     </ReportItems>
     <Height>2in</Height>
-    <Style />
   </Body>
   <Width>6.5in</Width>
   <Page>
@@ -49,10 +49,8 @@
     <RightMargin>2cm</RightMargin>
     <TopMargin>2cm</TopMargin>
     <BottomMargin>2cm</BottomMargin>
-    <ColumnSpacing>0.13cm</ColumnSpacing>
+    <ColumnSpacing>0.13000cm</ColumnSpacing>
     <Style />
   </Page>
-  <AutoRefresh>0</AutoRefresh>
   <rd:ReportUnitType>Cm</rd:ReportUnitType>
-  <rd:ReportID>e7b0ad59-b748-44b8-b89c-1fb8ef367f98</rd:ReportID>
 </Report>

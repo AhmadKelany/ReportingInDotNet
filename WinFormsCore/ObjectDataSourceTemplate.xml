@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+	<AutoRefresh>0</AutoRefresh>
+	<DataSources>
+		<DataSource Name="DataSourceName">
+			<ConnectionProperties>
+				<DataProvider>System.Data.DataSet</DataProvider>
+				<ConnectString>/* Local Connection */</ConnectString>
+			</ConnectionProperties>
+			<rd:DataSourceID>32378476-80af-4235-9853-47a1aade5cdf</rd:DataSourceID>
+		</DataSource>
+	</DataSources>
+	<DataSets>
+		<DataSet Name="DataSet1">
+			<Query>
+				<DataSourceName>DataSourceName</DataSourceName>
+				<CommandText>/* Local Query */</CommandText>
+			</Query>
+			<Fields>
+				<Field Name="StringPropertyName">
+					<DataField>StringPropertyName</DataField>
+					<rd:TypeName>System.String</rd:TypeName>
+				</Field>
+				<Field Name="IntegerPropertyName">
+					<DataField>IntegerPropertyName</DataField>
+					<rd:TypeName>System.Int32</rd:TypeName>
+				</Field>
+				<Field Name="DecimalPropertyName">
+					<DataField>DecimalPropertyName</DataField>
+					<rd:TypeName>System.Decimal</rd:TypeName>
+				</Field>
+				<Field Name="DateTimePropertyName">
+					<DataField>DateTimePropertyName</DataField>
+					<rd:TypeName>System.DateTime</rd:TypeName>
+				</Field>
+				<Field Name="BooleanPropertyName">
+					<DataField>BooleanPropertyName</DataField>
+					<rd:TypeName>System.Boolean</rd:TypeName>
+				</Field>
+			</Fields>
+			<rd:DataSetInfo>
+				<rd:DataSetName>DataSet1</rd:DataSetName>
+				<rd:TableName>Object</rd:TableName>
+				<rd:ObjectDataSourceType>NameSpace.Object, ProjectName, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</rd:ObjectDataSourceType>
+			</rd:DataSetInfo>
+		</DataSet>
+	</DataSets>
+	<ReportSections>
+	</ReportSections>
+	<ReportParameters>
+	</ReportParameters>
+	<ReportParametersLayout>
+	</ReportParametersLayout>
+</Report>
