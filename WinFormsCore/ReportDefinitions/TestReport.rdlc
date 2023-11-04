@@ -1,6 +1,50 @@
 <?xml version="1.0"?>
 <Report xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition">
   <AutoRefresh>0</AutoRefresh>
+	<DataSources>
+		<DataSource Name="DataSourceName">
+			<ConnectionProperties>
+				<DataProvider>System.Data.DataSet</DataProvider>
+				<ConnectString>/* Local Connection */</ConnectString>
+			</ConnectionProperties>
+			<rd:DataSourceID>32378476-80af-4235-9853-47a1aade5cdf</rd:DataSourceID>
+		</DataSource>
+	</DataSources>
+	<DataSets>
+		<DataSet Name="DataSet1">
+			<Query>
+				<DataSourceName>DataSourceName</DataSourceName>
+				<CommandText>/* Local Query */</CommandText>
+			</Query>
+			<Fields>
+				<Field Name="ItemNameEnglish">
+					<DataField>ItemNameEnglish</DataField>
+					<rd:TypeName>System.String</rd:TypeName>
+				</Field>
+				<Field Name="ItemNameArabic">
+					<DataField>ItemNameArabic</DataField>
+					<rd:TypeName>System.String</rd:TypeName>
+				</Field>
+				<Field Name="Quantity">
+					<DataField>Quantity</DataField>
+					<rd:TypeName>System.Int32</rd:TypeName>
+				</Field>
+				<Field Name="Price">
+					<DataField>Price</DataField>
+					<rd:TypeName>System.Decimal</rd:TypeName>
+				</Field>
+				<Field Name="LastSold">
+					<DataField>LastSold</DataField>
+					<rd:TypeName>System.DateTime</rd:TypeName>
+				</Field>
+			</Fields>
+			<rd:DataSetInfo>
+				<rd:DataSetName>DataSet1</rd:DataSetName>
+				<rd:TableName>Item</rd:TableName>
+				<rd:ObjectDataSourceType>WinFormsCore.Item, ProjectName, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</rd:ObjectDataSourceType>
+			</rd:DataSetInfo>
+		</DataSet>
+	</DataSets>
   <Body>
     <Style />
     <ReportItems>
